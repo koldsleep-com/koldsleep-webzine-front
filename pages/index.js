@@ -3,12 +3,13 @@ import Image from 'next/image';
 import Divider from '../components/Divider';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import axios from 'axios';
 
 const HomePage = () => {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
-    fetch('http://www.koldsleep.com/webzine/api_webzine_list/')
-      .then((response) => response.json())
+    axios
+      .get('http:http://www.koldsleep.com/webzine/api_webzine_list')
       .then((data) => {
         const dataList = [];
         for (const list in data) {
