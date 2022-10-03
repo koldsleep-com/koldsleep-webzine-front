@@ -9,14 +9,14 @@ const HomePage = () => {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     axios
-      .get('http:http://www.koldsleep.com/webzine/api_webzine_list')
+      .get('http://www.koldsleep.com/webzine/api_webzine_list')
       .then((data) => {
         const dataList = [];
-        for (const list in data) {
+        for (const list in data.data) {
           dataList.push({
-            title: data[list].title,
-            writer: data[list].writer,
-            is_blind: data[list].is_blind,
+            title: data.data[list].title,
+            writer: data.data[list].writer,
+            is_blind: data.data[list].is_blind,
           });
         }
         setArticles(dataList);
