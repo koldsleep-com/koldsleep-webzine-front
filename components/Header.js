@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <header>
-      <div className='header__link'>!GO KOLDSLEEP</div>
+      <div className='header__side'>! GO KOLDSLEEP</div>
       <div className='header__logo'>
         해피구독{' '}
         <Image
@@ -28,6 +28,7 @@ const Header = () => {
         />{' '}
         PROJECT
       </div>
+      <div className='header__side'></div>
     </header>
   );
 };
