@@ -5,19 +5,9 @@ const Divider = () => {
   return (
     <div className='divider--wrapper'>
       <div className='divider--side'></div>
-      <Image
-        alt='pin'
-        src='/assets/ico_star_+.svg'
-        width='24px'
-        height='12px'
-      />
+      <img alt='star' src='/assets/ico_star_+.svg' />
       <div className='divider--center'></div>
-      <Image
-        alt='pin'
-        src='/assets/ico_star_+.svg'
-        width='24px'
-        height='12px'
-      />
+      <img alt='star' src='/assets/ico_star_+.svg' />
       <div className='divider--side'></div>
     </div>
   );

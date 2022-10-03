@@ -114,10 +114,14 @@ article li:last-child {
   min-width: 742px;
   background-color: black;
 }
+
+.divider--wrapper img {
+  height: 12px;
+  width: 24px;
+}
+
 .divider--wrapper:last-of-type img {
   transform: rotate(90deg);
-  height: 24px;
-  width: 12px;
 }
 footer {
   margin: 0 auto;
