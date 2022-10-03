@@ -29,7 +29,7 @@ const Footer = () => {
             <br />
             디자인 루드너드리드
             <br />
-            개발 홍세영 양지윤
+            개발 홍세영 만수킴
             <br />
             주최/주관 koldsleep
             <br />
