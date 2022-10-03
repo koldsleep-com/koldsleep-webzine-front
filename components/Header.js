@@ -5,30 +5,18 @@ const Header = () => {
     <header>
       <div className='header__side'>! GO KOLDSLEEP</div>
       <div className='header__logo'>
-        해피구독{' '}
+        <span>해피구독</span>
         <Image
           alt='pin'
           src='/assets/ico_star_x.svg'
           width='13px'
           height='13px'
         />{' '}
-        HAPPY{' '}
-        <Image
-          alt='pin'
-          src='/assets/ico_star_+.svg'
-          width='24px'
-          height='12px'
-          className='save'
-        />{' '}
-        SAVE{' '}
-        <Image
-          alt='pin'
-          src='/assets/ico_star_+.svg'
-          width='24px'
-          height='12px'
-          className='project'
-        />{' '}
-        PROJECT
+        <span>HAPPY</span>
+        <img alt='pin' src='/assets/ico_star_+.svg' className='save' />{' '}
+        <span>SAVE</span>
+        <img alt='pin' src='/assets/ico_star_+.svg' className='project' />{' '}
+        <span>PROJECT</span>
       </div>
       <div className='header__side'></div>
     </header>
