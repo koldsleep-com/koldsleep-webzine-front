@@ -18,6 +18,7 @@ const Header = () => {
           src='/assets/ico_star_+.svg'
           width='24px'
           height='12px'
+          className='save'
         />{' '}
         SAVE{' '}
         <Image
@@ -25,6 +26,7 @@ const Header = () => {
           src='/assets/ico_star_+.svg'
           width='24px'
           height='12px'
+          className='project'
         />{' '}
         PROJECT
       </div>

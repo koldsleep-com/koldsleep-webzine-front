@@ -31,6 +31,18 @@ header {
   flex: none;
   text-align: center;
 }
+.header__logo:hover .save {
+  background-color: #ffd15b;
+  transform: rotate(90deg);
+  height: 24px;
+  width: 12px;
+}
+.header__logo:hover .project {
+  background-color: #3381f5;
+  transform: rotate(90deg);
+  height: 24px;
+  width: 12px;
+}
 .header__side {
   flex-grow: 1;
   max-width: 184px;
@@ -55,6 +67,14 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+li:hover .article__title:not(.blind) {
+  color: #ffd15b;
+}
+
+li:hover .article__writer:not(.blind) {
+  color: #3381f5;
 }
 
 article li:last-child {
@@ -96,6 +116,8 @@ article li:last-child {
 }
 .divider--wrapper:last-of-type img {
   transform: rotate(90deg);
+  height: 24px;
+  width: 12px;
 }
 footer {
   margin: 0 auto;
