@@ -78,11 +78,11 @@ article li {
   cursor: pointer;
 }
 
-article li:not(.blind) li:hover .article__title:not(.blind) {
+article li:hover .article__title:not(.blind) {
   color: #ffd15b;
 }
 
-li:hover .article__writer:not(.blind) {
+article li:hover .article__writer:not(.blind) {
   color: #3381f5;
 }
 
