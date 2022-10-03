@@ -31,7 +31,10 @@ const HomePage = () => {
       <article>
         {articles.map((item) => {
           return (
-            <Link href={`/page/${item.id}`} key={item.title}>
+            <Link
+              href={item.is_blind !== 'true' ? `/page/${item.id}` : `/`}
+              key={item.title}
+            >
               <li>
                 <div
                   className={
