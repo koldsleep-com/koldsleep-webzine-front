@@ -70,16 +70,15 @@ article {
 article li {
   border-bottom: 2px solid black;
   list-style: none;
-}
-li {
   width: 750px;
   height: 68px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-li:hover .article__title:not(.blind) {
+article li:not(.blind) li:hover .article__title:not(.blind) {
   color: #ffd15b;
 }
 

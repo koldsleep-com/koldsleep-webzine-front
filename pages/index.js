@@ -4,6 +4,7 @@ import Divider from '../components/Divider';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import axios from 'axios';
+import Link from 'next/link';
 
 const HomePage = () => {
   const [articles, setArticles] = useState([]);
@@ -14,6 +15,7 @@ const HomePage = () => {
         const dataList = [];
         for (const list in data.data) {
           dataList.push({
+            id: Number(list),
             title: data.data[list].title,
             writer: data.data[list].writer,
             is_blind: data.data[list].is_blind,
@@ -29,26 +31,28 @@ const HomePage = () => {
       <article>
         {articles.map((item) => {
           return (
-            <li key={item.title}>
-              <div
-                className={
-                  item.is_blind === 'true'
-                    ? 'article__title blind'
-                    : 'article__title'
-                }
-              >
-                {item.title}
-              </div>
-              <div
-                className={
-                  item.is_blind === 'true'
-                    ? 'article__writer blind'
-                    : 'article__writer'
-                }
-              >
-                {item.writer}
-              </div>
-            </li>
+            <Link href={`/page/${item.id}`} key={item.title}>
+              <li>
+                <div
+                  className={
+                    item.is_blind === 'true'
+                      ? 'article__title blind'
+                      : 'article__title'
+                  }
+                >
+                  {item.title}
+                </div>
+                <div
+                  className={
+                    item.is_blind === 'true'
+                      ? 'article__writer blind'
+                      : 'article__writer'
+                  }
+                >
+                  {item.writer}
+                </div>
+              </li>
+            </Link>
           );
         })}
       </article>
