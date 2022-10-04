@@ -14,7 +14,7 @@ const Detail = () => {
     isblind: '',
   });
   useEffect(() => {
-    fetch('http://www.koldsleep.com/webzine/api_webzine_list')
+    fetch('https://www.koldsleep.com/webzine/api_webzine_list')
       .then((data) => data.json())
       .then((data) => {
         setData(data[router.query.pageId]);

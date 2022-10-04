@@ -9,16 +9,16 @@ import Link from 'next/link';
 const HomePage = () => {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
-    axios
-      .get('http://www.koldsleep.com/webzine/api_webzine_list')
+    fetch('https://www.koldsleep.com/webzine/api_webzine_list')
+      .then((data) => data.json())
       .then((data) => {
         const dataList = [];
-        for (const list in data.data) {
+        for (const list in data) {
           dataList.push({
             id: Number(list),
-            title: data.data[list].title,
-            writer: data.data[list].writer,
-            is_blind: data.data[list].is_blind,
+            title: data[list].title,
+            writer: data[list].writer,
+            is_blind: data[list].is_blind,
           });
         }
         setArticles(dataList);
