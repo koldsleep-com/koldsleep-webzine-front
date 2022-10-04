@@ -24,13 +24,17 @@ const Detail = () => {
     <>
       <Header />
       <Divider />
-      <h1>{data?.title}</h1>
-      <span>{data?.writer}</span>
-      <div dangerouslySetInnerHTML={{ __html: data?.content }} />
-      <div>----------------</div>
-      <div dangerouslySetInnerHTML={{ __html: data?.writer_info }} />
+      <article className='article__page'>
+        <h1>{data?.title}</h1>
+        <span>{data?.writer}</span>
+        <section dangerouslySetInnerHTML={{ __html: data?.content }} />
+        <div className='article__divider'></div>
+        <section dangerouslySetInnerHTML={{ __html: data?.writer_info }} />
+      </article>
       <Divider />
-      <Link href='/'>목록으로 가기</Link>
+      <Link href='/'>
+        <footer className='footer__back'>⏎ 목록으로 가기</footer>
+      </Link>
     </>
   );
 };

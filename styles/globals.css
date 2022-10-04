@@ -126,6 +126,48 @@ article li:last-child {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.article__page h1 {
+  font-family: 'Pretendard Variable';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+}
+.article__page span {
+  font-family: 'Pretendard Variable';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 162%;
+  text-align: center;
+}
+
+.article__page section:first-of-type {
+  font-family: 'Pretendard Variable';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 165%;
+  text-align: justify;
+  text-indent: 24px;
+}
+
+.article__page section:last-of-type {
+  width: 342px;
+  margin-left: auto;
+  font-family: 'Pretendard Variable';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 162%;
+}
+.article__divider {
+  height: 2px;
+  width: 747px;
+  background-color: black;
+}
+
 /* Divider */
 .divider--wrapper {
   display: flex;
@@ -205,6 +247,17 @@ footer section {
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
+}
+
+.footer__back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pretendard Variable';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 162%;
 }
 
 @media screen and (max-width: 600px) {
