@@ -11,6 +11,7 @@ const Detail = () => {
     writer: '',
     writer_info: '',
     content: '',
+    isblind: '',
   });
   useEffect(() => {
     fetch('http://www.koldsleep.com/webzine/api_webzine_list')
@@ -18,17 +19,16 @@ const Detail = () => {
       .then((data) => {
         setData(data[router.query.pageId]);
       });
-    console.log(data);
   }, []);
   return (
     <>
       <Header />
       <Divider />
-      <h1>{data.title}</h1>
-      <span>{data.writer}</span>
-      <div>{data.content}</div>
+      <h1>{data?.title}</h1>
+      <span>{data?.writer}</span>
+      <div dangerouslySetInnerHTML={{ __html: data?.content }} />
       <div>----------------</div>
-      <div>{data.writer_info}</div>
+      <div dangerouslySetInnerHTML={{ __html: data?.writer_info }} />
       <Divider />
       <Link href='/'>목록으로 가기</Link>
     </>
