@@ -5,7 +5,12 @@ const Footer = () => {
     <footer>
       <section>
         <div className='section__label'>
-          <Image alt='pin' src='/assets/ico_pin.svg' width='9px' height='9px' />
+          <Image
+            alt='pin'
+            src='/assets/ico_pin.svg'
+            width='28px'
+            height='28px'
+          />
           소개
         </div>
         <div className='introduce'>
@@ -20,7 +25,12 @@ const Footer = () => {
       </section>
       <section>
         <div className='section__label'>
-          <Image alt='pin' src='/assets/ico_pin.svg' width='9px' height='9px' />
+          <Image
+            alt='pin'
+            src='/assets/ico_pin.svg'
+            width='28px'
+            height='28px'
+          />
           크레딧
         </div>
         <div className='credit'>
