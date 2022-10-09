@@ -29,6 +29,7 @@ const Detail = () => {
         <span>{data?.writer}</span>
         <section dangerouslySetInnerHTML={{ __html: data?.content }} />
         <div className='article__divider'></div>
+        <span>{data?.writer}</span>
         <section dangerouslySetInnerHTML={{ __html: data?.writer_info }} />
       </article>
       <Divider />

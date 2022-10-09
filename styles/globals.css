@@ -153,8 +153,20 @@ article li:last-child {
   text-indent: 24px;
 }
 
+.article__page span:last-of-type {
+  width: 342px;
+  text-align: left;
+  margin-left: auto;
+  font-family: 'Pretendard Variable';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 162%;
+}
+
 .article__page section:last-of-type {
   width: 342px;
+  height: 39px;
   margin-left: auto;
   font-family: 'Pretendard Variable';
   font-style: normal;
@@ -162,6 +174,7 @@ article li:last-child {
   font-size: 18px;
   line-height: 162%;
 }
+
 .article__divider {
   height: 2px;
   width: 747px;
@@ -228,6 +241,10 @@ footer section {
   text-indent: 24px;
 }
 
+.introduce p {
+  padding: 3px;
+}
+
 .credit {
   font-family: 'Pretendard Variable';
   font-style: normal;
@@ -235,6 +252,10 @@ footer section {
   font-size: 18px;
   line-height: 165%;
   text-align: justify;
+}
+
+.credit p {
+  padding: 3px;
 }
 
 .section__label {
@@ -258,6 +279,7 @@ footer section {
   font-weight: 700;
   font-size: 24px;
   line-height: 162%;
+  padding: 31px 0;
 }
 
 @media screen and (max-width: 600px) {
