@@ -186,6 +186,10 @@ article li:last-child {
   margin-bottom: 38px;
 }
 
+.article__divider:last-of-type {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   article {
     border-left: none;
@@ -200,8 +204,10 @@ article li:last-child {
     width: 100%;
     padding-left: 11px;
   }
+  .article__divider:last-of-type {
+    display: block;
+  }
 }
-
 /* Divider */
 .divider--wrapper {
   display: flex;

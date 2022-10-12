@@ -32,7 +32,7 @@ const Detail = () => {
         <span>{data?.writer}</span>
         <section dangerouslySetInnerHTML={{ __html: data?.writer_info }} />
       </article>
-      <Divider />
+      <Divider className='article__divider--pc' />
       <Link href='/'>
         <footer className='footer__back'>⏎ 목록으로 가기</footer>
       </Link>
