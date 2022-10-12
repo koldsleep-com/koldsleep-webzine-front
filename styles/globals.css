@@ -158,7 +158,7 @@ article li:last-child {
 }
 
 .article__page span:last-of-type {
-  max-width: 384px;
+  width: 384px;
   text-align: left;
   margin-left: auto;
   font-family: 'Pretendard Variable';
@@ -169,7 +169,7 @@ article li:last-child {
 }
 
 .article__page section:last-of-type {
-  max-width: 384px;
+  width: 384px;
   margin-left: auto;
   font-family: 'Pretendard Variable';
   font-style: normal;
@@ -190,6 +190,15 @@ article li:last-child {
   article {
     border-left: none;
     border-right: none;
+  }
+  .article__page section:first-of-type {
+    padding: 38px 11px 60px;
+  }
+
+  .article__page section:last-of-type,
+  .article__page span:last-of-type {
+    width: 100%;
+    padding-left: 11px;
   }
 }
 
