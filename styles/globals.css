@@ -21,6 +21,7 @@ header {
   display: flex;
   align-items: center;
   height: 59px;
+  min-width: 266px;
   font-family: 'Pretendard Variable';
   font-style: normal;
   font-weight: 700;
@@ -34,7 +35,6 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 768px;
-  min-width: 372px;
   text-align: center;
 }
 .header__logo span {
@@ -65,9 +65,24 @@ header {
   min-width: 190px;
 }
 
+.header__logo--happysaveproject {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 600px) {
+  header {
+    height: 114px;
+  }
   .header__side {
     display: none;
+  }
+  .header__logo {
+    flex-direction: column-reverse;
+    margin: auto;
+    gap: 6px;
   }
 }
 
@@ -78,6 +93,7 @@ article {
   flex-direction: column;
   justify-content: center;
   max-width: 768px;
+  min-width: 266px;
   padding: 0 7px;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -209,9 +225,11 @@ article li:last-child {
   }
 }
 /* Divider */
+
 .divider--wrapper {
   display: flex;
   align-items: center;
+  min-width: 266px;
 }
 .divider--side {
   height: 2px;
@@ -274,6 +292,7 @@ article li:last-child {
 footer {
   margin: 0 auto;
   max-width: 768px;
+  min-width: 266px;
   display: flex;
   border-right: 2px solid black;
   border-left: 2px solid black;
