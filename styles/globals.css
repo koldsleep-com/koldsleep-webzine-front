@@ -192,6 +192,13 @@ article li:last-child {
   display: none;
 }
 
+.article__divider--mb {
+  display: none;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
 @media screen and (max-width: 600px) {
   article {
     border-left: none;
@@ -208,6 +215,12 @@ article li:last-child {
   }
   .article__divider:last-of-type {
     display: block;
+  }
+  .article__divider--mb {
+    display: block;
+  }
+  .article__divider--pc {
+    display: none;
   }
 }
 /* Divider */
@@ -235,8 +248,10 @@ article li:last-child {
   margin: 4px;
 }
 
-.divider--img:last-of-type {
+.divider--reverse img {
   transform: rotate(90deg);
+  height: 24px;
+  width: 24px;
 }
 
 .divider--side--mb {

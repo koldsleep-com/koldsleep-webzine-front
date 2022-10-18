@@ -31,8 +31,11 @@ const Detail = () => {
         <div className='article__divider'></div>
         <span>{data?.writer}</span>
         <section dangerouslySetInnerHTML={{ __html: data?.writer_info }} />
+        <div className='article__divider--mb'></div>
       </article>
-      <Divider className='article__divider--pc' />
+      <div className='divider--reverse article__divider--pc'>
+        <Divider />
+      </div>
       <Link href='/'>
         <footer className='footer__back'>⏎ 목록으로 가기</footer>
       </Link>

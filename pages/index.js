@@ -59,7 +59,9 @@ const HomePage = () => {
           );
         })}
       </article>
-      <Divider />
+      <div className='divider--reverse'>
+        <Divider />
+      </div>
       <Footer />
     </>
   );
