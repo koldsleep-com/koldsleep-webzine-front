@@ -36,6 +36,7 @@ header {
   align-items: center;
   max-width: 768px;
   text-align: center;
+  cursor: pointer;
 }
 .header__logo span {
   height: 22px;
@@ -63,6 +64,7 @@ header {
 }
 .header__side:first-of-type {
   min-width: 200px;
+  cursor: pointer;
 }
 
 .header__logo--happysaveproject {
