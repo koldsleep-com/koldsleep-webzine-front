@@ -123,11 +123,13 @@ article li:last-child {
 }
 
 .article__title {
+  margin-left: 18px;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
 }
 .article__writer {
+  margin-right: 18px;
   margin-left: auto;
   font-weight: 700;
   font-size: 22px;
