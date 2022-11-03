@@ -11,7 +11,7 @@ const Header = () => {
         <div className='header__logo'>
           <span className='header__logo--happysubscribe'>해피구독</span>
           <Image
-            className='header__logo--x'
+            className='happy'
             alt='pin'
             src='/assets/ico_star_x.svg'
             width='13px'
