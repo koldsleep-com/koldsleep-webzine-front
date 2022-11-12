@@ -64,6 +64,7 @@ const HomePage = () => {
       </div>
       <Footer />
       <Divider />
+      <footer className='footer__back'></footer>
     </>
   );
 };
