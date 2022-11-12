@@ -63,6 +63,7 @@ const HomePage = () => {
         <Divider />
       </div>
       <Footer />
+      <Divider />
     </>
   );
 };
