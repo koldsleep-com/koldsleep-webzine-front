@@ -308,6 +308,11 @@ article li:last-child {
   .divider--img--mb {
     display: block;
   }
+  .divider--reverse img {
+    transform: rotate(180deg);
+    height: 11px;
+    width: 20.3px;
+  }
 }
 
 /* Footer */
